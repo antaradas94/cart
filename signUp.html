@@ -1,0 +1,33 @@
+<html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="head_style.css"/>
+<script>
+
+$(function(){
+	$("#header").load("head.html");
+});
+
+</script>
+</head>
+<body style="background-color:rgba(0,0,255,0.2);">
+	<div id="header" name="header"></div><br/>
+<form id="signUp" name="signUp" action="signUp.php" method="post">
+	<div id="reg" name="reg">
+		<label for="register" id="reg1">Registration form</label><br/>
+		<input type="text" id="fname" name="fname" placeholder="First Name"/><br/>
+		<input type="text" id="lname" name="lname" placeholder="Last Name"/><br/>
+		<input type="radio" id="gender" name="gender" value="Male"/>Male<br/>
+		<input type="radio" id="gender" name="gender" value="Female"/>Female<br/>
+		<textarea id="addr" name="addr" rows="5" cols="30" placeholder="Address"></textarea><br/>
+		<input type="number" id="mob" name="mob" placeholder="Mobile Number"/><br/>
+		<input type="date" id="dob" name="dob" placeholder="DOB (yyyy/mm/dd)"/><br/>
+		<input type="email" id="eid" name="eid" placeholder="Email Id"/><br/>
+		<input type="password" id="pwd" name="pwd" placeholder="Password"/><br/>
+		<input type="hidden" id="uid" name="uid" ><br>
+		<input type="submit" id="submit" name="submit" value="Submit Info"/><br/>
+	</div>
+</form>
+</body>
+</html>
